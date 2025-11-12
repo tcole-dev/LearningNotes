@@ -158,7 +158,7 @@ public interface UserMapper {
       <property name="url" value="${url}"/>
       <property name="username" value="${username}"/>
       <property name="password" value="${password}"/>
-    </dataSource>
+</dataSource>
 ```
 
 #### Mybatis映射文件
@@ -1030,3 +1030,17 @@ public class BodyParamController {
 ## SSM整合
 
 [文档链接](https://www.yuque.com/teemo730/share/utagguw5b8uyqaf9)
+
+# SpringBoot
+
+## SpringBoot配置
+
+1. SSM组合中，程序的开端是各框架的配置类，如Mybatis由配置类的数据源、MapperScan初始化；Spring框架的IOC控制反转等也需要@Component、@ComponentScan等注解进行Bean注册的操作等；SpringMVC框架中不仅需要SpringMVC本身的配置，Servlet也需要用Spring、SpringMVC的配置类进行配置。
+
+​	SpringBoot的启动依赖于@SpringBootApplication注解标注的main方法，因此@ComponentScan也是作用于这个启动类上，而	Mybatis则被包含在SpringBoot配置类中，这个配置类整合了各配置信息，服务器端口、数据源、mybatis的mapper等。
+
+​	其他繁琐的配置则由SpringBoot自动完成。
+
+2. SpringBoot的依赖
+   - `spring-boot-starter-parent`，该依赖维护了多个外部库的版本，springboot项目引入外部库时，框架会自动根据这个父pom中维护版本来配置，但一般只有spring全家桶和较常见的库才会被自动维护。同时，这个依赖还会定义maven插件配置、java编译打包方式
+   - `spring-boot-starter-web`，该依赖负责根据父pom中的信息引入web（尤其是RESTful）项目所需的基础依赖。

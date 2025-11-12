@@ -250,7 +250,7 @@ SELECT  studentNO  FROM student WHERE 1
 
 - JOIN  SQL中的JOIN用于将两个或多个表连接起来
 
-<img src="C:\Users\t'c\Desktop\md文档\img\sql-join.png" style="zoom: 67%;" />
+<img src="C:\Users\t'c\Desktop\Markdowns\img\sql-join.png" style="zoom: 67%;"/>
 
 INNER JOIN  只获取两表中符合条件的记录（交集）
 
@@ -268,7 +268,7 @@ SELECT column1, column2, ...
 FROM table2;
 ```
 
-<img src="C:\Users\t'c\Desktop\md文档\img\53e8e79b70093d886b466af8e7f71c5.png" style="zoom:50%;" />
+<img src="C:\Users\t'c\Desktop\Markdowns\img\53e8e79b70093d886b466af8e7f71c5.png" style="zoom:50%;" />
 
 UNION操作符并不保证合并数据具有相同含义，只是按照指定的列进行简单直接的合并
 
