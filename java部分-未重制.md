@@ -31,7 +31,11 @@ System.out.println(obj.getName());
 
 
 ## IO流
-**1. IO流：字节流（InputStream（FileInputStream等实现）、OutputStream（FileOutStream等实现））；字符流（Reader（FileReader等实现）、Writer（FileWriter等实现））；缓冲流（字节缓冲流、字符缓冲流）**
+**1. IO流：字节流（InputStream（FileInputStream等实现）、OutputStream（FileOutStream等实现））；**
+
+**字符流（Reader（FileReader等实现）、Writer（FileWriter等实现））；**
+
+**缓冲流（字节缓冲流、字符缓冲流）**
 
 **缓冲流：字节---BufferedInputStream、BufferedOutputStream    字符---BufferedReader、BufferedWriter**
 
