@@ -104,8 +104,8 @@ function func() {
 - Js中的==和===。==只比较内容，不比较数据类型；===比较内容前会检查两者是否为相同。
 
   ```javascript
-  let a = new String('abc');
-  b = 'abc'
+  let a = new String('abc'); // Object
+  b = 'abc'				  // String
   
   console.log(a == b)        // true
   console.log(a === b)       // false
