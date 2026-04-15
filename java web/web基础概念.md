@@ -184,7 +184,7 @@ resp.setContentType("text/plain;charset=UTF-8");
 
 cookie：储存在浏览器客户端
 
-session：存储在服务器。通常来说，session是短期使用，当用户访问服务器时，自动注册临时（会话级）`SESSIONID` Cookie,这个临时的SESSIONID在推出浏览器或到达设置的销毁时间后失效，同时session一般销毁时间为30min，到期后销毁，无论浏览器的SESSIONID或session销毁，用户都不能接续上次的会话状态，因此session只适用于**保留短期的会话状态**，如视频上次的播放时间点等。
+session：存储在服务器。通常来说，session是短期使用，当用户访问服务器时，自动注册临时（会话级）`SESSIONID` Cookie,这个临时的SESSIONID在退出浏览器或到达设置的销毁时间后失效，同时session一般销毁时间为30min，到期后销毁，无论浏览器的SESSIONID或session销毁，用户都不能接续上次的会话状态，因此session只适用于**保留短期的会话状态**，如视频上次的播放时间点等。
 
 其他Cookie、Session操作，见于[文档](https://www.yuque.com/teemo730/share/gdg3kaur64hi8knz)，[视频](https://www.bilibili.com/video/BV1vzc6eaEb6?spm_id_from=333.788.videopod.sections&vd_source=281d3b331f91a2e94d14292097819649)
 
